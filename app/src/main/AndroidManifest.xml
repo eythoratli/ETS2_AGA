@@ -17,10 +17,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".sign_up"
-            android:label="@string/title_activity_sign_up" >
-        </activity>
-        <activity
             android:name=".log_in"
             android:label="@string/title_activity_log_in" >
         </activity>
@@ -45,7 +41,7 @@
             android:label="@string/title_activity_start_journey" >
         </activity>
         <activity
-            android:name=".sign_up2"
+            android:name=".sign_up"
             android:label="@string/title_activity_sign_up2" >
         </activity>
     </application>

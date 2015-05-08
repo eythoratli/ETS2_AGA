@@ -147,7 +147,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:src="@mipmap/signup"
-        android:background="#00000000" />
+        android:background="#00000000"
+        android:onClick="openOptions"/>
 
 </RelativeLayout>
 

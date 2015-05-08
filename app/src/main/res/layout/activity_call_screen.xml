@@ -32,7 +32,7 @@ android:onClick="openUserProfile">
         android:layout_height="121dp"
         android:layout_gravity="left"
         android:paddingBottom="4dp"
-        android:id="@+id/">
+        android:id="@+id/call_no1_layer">
 
         <ImageView
             android:layout_width="fill_parent"
