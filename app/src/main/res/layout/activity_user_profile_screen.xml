@@ -6,12 +6,14 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".user_profile_screen"
 
     android:visibility="visible"
-    android:background="@mipmap/background">
+    android:background="#fffffff"
+    android:id="@+id/User_profile">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@mipmap/babba">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -23,34 +25,36 @@
                 android:layout_width="100dp"
                 android:layout_height="125dp"
                 android:id="@+id/imageView"
-                android:src="@mipmap/noprofileimg" />
+                android:src="@mipmap/mike" />
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
-                android:layout_height="125dp">
+                android:layout_height="125dp"
+                android:id="@+id/name_layout">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Name:"
-                    android:id="@+id/textView4"
+                    android:text="Name: Michael Jones"
+                    android:id="@+id/name_user_screen"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textColor="#ffffff"
+                    android:textColor="#383838"
                     android:paddingLeft="5dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Truck:"
-                    android:id="@+id/textView2"
+                    android:text="Truck: Volvo VNX 630"
+                    android:id="@+id/truck_user_screen"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textColor="#ffffff"
-                    android:paddingLeft="5dp" />
+                    android:textColor="#383838"
+                    android:paddingLeft="5dp"
+                    android:background="#26D1D1D1" />
 
             </LinearLayout>
 
@@ -59,92 +63,211 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.05">
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:id="@+id/imageView2"
-                android:src="@mipmap/bordi" />
+                android:src="@mipmap/bordi"
+                android:scaleType="fitXY" />
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/Middle_section"
-            android:layout_weight="0.14">
+            android:layout_height="40dp"
+            android:weightSum="1"
+            android:id="@+id/"
+            android:background="#26D1D1D1">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Average speed............92 km/h"
-                android:id="@+id/textView11"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold"
-                android:textColor="#ffffff" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Average Shifting"
+                android:id="@+id/shifting"
+                android:layout_gravity="center_vertical|left"
+                android:paddingRight="170dp"
+                android:textColor="#383838" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Ave. fuel con.........5,2L/100km"
-                android:id="@+id/textView6"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold"
-                android:textColor="#ffffff" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Breaking.........................GOOD"
-                android:id="@+id/textView8"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold"
-                android:textColor="#ffffff" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Shifting...........................GOOD"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="75"
                 android:id="@+id/textView9"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold"
-                android:textColor="#ffffff" />
+                android:layout_gravity="center_vertical"
+                android:textColor="#383838" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="1"
+            android:background="#26383838">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Phone usage...........15 min/trip"
-                android:id="@+id/textView10"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold"
-                android:textColor="#ffffff" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Breaking"
+                android:id="@+id/Break"
+                android:layout_gravity="center_vertical|left"
+                android:paddingRight="231dp"
+                android:textColor="#d1d1d1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Trip length....................3 hours"
-                android:id="@+id/textView12"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:textStyle="bold"
-                android:textColor="#ffffff" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="81"
+                android:id="@+id/textView13"
+                android:layout_gravity="center_vertical"
+                android:textColor="#d1d1d1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="1"
+            android:id="@+id/"
+            android:background="#26D1D1D1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Phone Usage"
+                android:id="@+id/phone_usage"
+                android:layout_gravity="center_vertical|left"
+                android:paddingRight="195dp"
+                android:textColor="#383838" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="38"
+                android:id="@+id/textView15"
+                android:layout_gravity="center_vertical"
+                android:textColor="#383838" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="1"
+            android:id="@+id/"
+            android:background="#26383838">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Fatigue"
+                android:id="@+id/fatigue"
+                android:layout_gravity="center_vertical|left"
+                android:paddingRight="242dp"
+                android:textColor="#d1d1d1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="58"
+                android:id="@+id/textView17"
+                android:layout_gravity="center_vertical"
+                android:textColor="#d1d1d1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="1"
+            android:background="#26D1D1D1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Acceleration"
+                android:id="@+id/Accel"
+                android:layout_gravity="center_vertical|left"
+                android:paddingRight="201dp"
+                android:textColor="#383838" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="79"
+                android:id="@+id/textView19"
+                android:layout_gravity="center_vertical"
+                android:textColor="#383838" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="1"
+            android:id="@+id/"
+            android:background="#40383838">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Fuel Consumption"
+                android:id="@+id/fuelCons"
+                android:layout_gravity="center_vertical|left"
+                android:paddingRight="83dp"
+                android:textColor="#d1d1d1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="10L/100km"
+                android:id="@+id/textView11"
+                android:layout_gravity="center_vertical"
+                android:textColor="#d1d1d1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="1"
+            android:background="#66D1D1D1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Average Speed"
+                android:id="@+id/AveSpeed"
+                android:layout_gravity="center_vertical|left"
+                android:paddingRight="132dp"
+                android:textColor="#383838" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="92 km/h"
+                android:id="@+id/avgspeed_"
+                android:layout_gravity="center_vertical"
+                android:textColor="#383838" />
 
         </LinearLayout>
+
     </LinearLayout>
 
 </RelativeLayout>

@@ -1,29 +1,23 @@
 package com.example.eyjobro.ets2_aga;
 
-import android.content.Context;
-import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
-
-import java.io.IOException;
-import java.sql.SQLException;
 
 
-public class user_profile_screen extends ActionBarActivity {
+public class sign_up2 extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_profile_screen);
+        setContentView(R.layout.activity_sign_up2);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_user_profile_screen, menu);
+        getMenuInflater().inflate(R.menu.menu_sign_up2, menu);
         return true;
     }
 

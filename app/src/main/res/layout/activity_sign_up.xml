@@ -10,8 +10,9 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:weightSum="1">
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/top_part_signup">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -23,7 +24,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:text="      Sign Up"
-                android:id="@+id/textytext"
+                android:id="@+id/Signup_header"
                 android:textSize="50dp"
                 android:textColor="#ffffffff" />
 
@@ -32,8 +33,9 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="242dp"
-            android:id="@+id/textField">
+            android:layout_height="265dp"
+            android:id="@+id/textField"
+            android:weightSum="1">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -48,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/name"
+                android:id="@+id/name_signup"
                 android:hint="Name"
                 android:textStyle="italic"
                 android:textColorHint="#ffa6a6a6"
@@ -68,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:ems="10"
-                android:id="@+id/email"
+                android:id="@+id/email_signup"
                 android:hint="E-mail"
                 android:textStyle="italic"
                 android:textColorHint="#ffa6a6a6"
@@ -88,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:ems="10"
-                android:id="@+id/username"
+                android:id="@+id/username_signup"
                 android:hint="Username"
                 android:textStyle="italic"
                 android:textColorHint="#ffa6a6a6"
@@ -107,8 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/passField"
+                android:id="@+id/password_signup"
                 android:maxLength="10"
                 android:textStyle="italic"
                 android:hint="password"
@@ -118,34 +119,35 @@
 
         </LinearLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_part_signup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/remember_me_layout">
+
         <CheckBox
-            android:layout_width="wrap_content"
+            android:layout_width="166dp"
             android:layout_height="wrap_content"
-            android:text="Remember Me"
-            android:id="@+id/CB"
-            android:textSize="20sp"
-            android:textColor="#ffffffff"
-            android:nestedScrollingEnabled="false"
-            android:clickable="true"
-            android:checked="false"
-            android:buttonTint="#ffffffff"
-            android:layout_above="@+id/signUpButt"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_gravity="center_horizontal" />
+            android:text="Remember me"
+            android:id="@+id/remember_me"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
 
     </LinearLayout>
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/signUpButt"
-        android:src="@mipmap/signup"
-        android:layout_gravity="center_horizontal"
-        android:background="#00000000"
-        android:onClick="openOptions"
+        android:id="@+id/signup_button_siscreen"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/signup"
+        android:background="#00000000" />
 
 </RelativeLayout>
 

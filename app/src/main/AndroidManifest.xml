@@ -44,6 +44,10 @@
             android:name=".start_journey"
             android:label="@string/title_activity_start_journey" >
         </activity>
+        <activity
+            android:name=".sign_up2"
+            android:label="@string/title_activity_sign_up2" >
+        </activity>
     </application>
 
 </manifest>

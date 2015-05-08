@@ -10,4 +10,5 @@
     <string name="title_activity_call_screen">call_screen</string>
     <string name="title_activity_options_screen">options_screen</string>
     <string name="title_activity_start_journey">start_journey</string>
+    <string name="title_activity_sign_up2">sign_up2</string>
 </resources>

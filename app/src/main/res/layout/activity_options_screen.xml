@@ -52,7 +52,7 @@ android:background="@mipmap/background">
             android:textColor="#38b255"
             android:textSize="20dp"
             android:layout_gravity="center_vertical"
-            android:onClick="openUserProfile"/>
+            android:onClick="openUserProfile" />
 
     </LinearLayout>
 
