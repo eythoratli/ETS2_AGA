@@ -8,7 +8,7 @@
     android:layoutMode="opticalBounds"
     android:textAlignment="center"
     android:visibility="visible"
-    android:background="@mipmap/background">
+    android:background="@mipmap/babba">
 
     <LinearLayout
         android:orientation="vertical"
