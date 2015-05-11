@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".log_in"
+    android:background="@mipmap/background3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout4">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="91dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="CreateProfile"
+                android:id="@+id/signBarr"
+                android:textSize="50sp"
+                android:textColor="#fe9b9999" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="224dp"
+            android:id="@+id/logFields">
+
+            <ImageView
+                android:layout_width="228dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView7"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/noprofileimg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/password"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="UserName :"
+                android:id="@+id/userN"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#fe9b9999" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/userField"
+                android:hint="username"
+                android:textStyle="italic"
+                android:textColorHint="#fe9b9999"
+                android:textColor="#fe9b9999" />
+
+            <Button
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:text="CREATE"
+                android:id="@+id/button3"
+                android:layout_weight="0.61"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:enabled="true"
+                android:clickable="true"
+                android:textColor="#fe9b9999"
+                android:onClick="openOptionsScreen" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
